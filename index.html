@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="myForm">
+    <label for="fullName">ПІБ:</label>
+    <input type="text" id="fullName" name="fullName" pattern="[А-ЯІЇЄ]{1}[а-яіїє']+ [А-ЯІЇЄ]{1}\.[А-ЯІЇЄ]{1}\." required>
+    <br>
+
+    <label for="faculty">Факультет:</label>
+    <input type="text" id="faculty" name="faculty" pattern="[А-ЯІЇЄа-яіїє']+" required>
+    <br>
+
+    <label for="birthdate">Дата народження:</label>
+    <input type="text" id="birthdate" name="birthdate" pattern="\d{2}\.\d{2}\.\d{4}" placeholder="ЧЧ.ЧЧ.ЧЧЧЧ" required>
+    <br>
+
+    <label for="address">Адреса:</label>
+    <input type="text" id="address" name="address" pattern="м\.\s[А-ЯІЇЄа-яіїє']+" required>
+    <br>
+
+    <label for="email">e-mail:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+
+    <button type="button" onclick="validateForm()">Валідувати</button>
+
+</form>
+
+<label for="colorPicker">Палітра</label>
+<input type="color" id="colorPicker">
+<table id="myTable">
+    <tr>
+        <td id="cell_1">1</td>
+        <td id="cell_2">2</td>
+        <td id="cell_3">3</td>
+        <td id="cell_4">4</td>
+        <td id="cell_5">5</td>
+        <td id="cell_6">6</td>
+    </tr>
+    <tr>
+        <td id="cell_7">7</td>
+        <td id="cell_8">8</td>
+        <td id="cell_9">9</td>
+        <td id="cell_10">10</td>
+        <td id="cell_11">11</td>
+        <td id="cell_12">12</td>
+    </tr>
+    <tr>
+        <td id="cell_13">13</td>
+        <td id="cell_14">14</td>
+        <td id="cell_15">15</td>
+        <td id="cell_16">16</td>
+        <td id="cell_17">17</td>
+        <td id="cell_18">18</td>
+    </tr>
+    <tr>
+        <td id="cell_19">19</td>
+        <td id="cell_20">20</td>
+        <td id="cell_21">21</td>
+        <td id="cell_22">22</td>
+        <td id="cell_23">23</td>
+        <td id="cell_24">24</td>
+    </tr>
+    <tr>
+        <td id="cell_25">25</td>
+        <td id="cell_26">26</td>
+        <td id="cell_27">27</td>
+        <td id="cell_28">28</td>
+        <td id="cell_29">29</td>
+        <td id="cell_30">30</td>
+    </tr>
+    <tr>
+        <td id="cell_31">31</td>
+        <td id="cell_32">32</td>
+        <td id="cell_33">33</td>
+        <td id="cell_34">34</td>
+        <td id="cell_35">35</td>
+        <td id="cell_36">36</td>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
